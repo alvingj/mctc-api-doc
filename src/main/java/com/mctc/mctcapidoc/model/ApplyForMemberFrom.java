@@ -3,6 +3,8 @@ package com.mctc.mctcapidoc.model;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import java.util.List;
+
 /**
  * @Description: java类作用描述
  * @Author: gongjun
@@ -45,8 +47,8 @@ public class ApplyForMemberFrom {
     @ApiModelProperty(value = "affectiveState", name = "情感状态", dataType = "String")
     private String affectiveState;
 
-    @ApiModelProperty(value = "hobbies", name = "兴趣爱好", dataType = "String")
-    private String hobbies;
+    @ApiModelProperty(value = "hobbies", name = "兴趣爱好", dataType = "List<String>")
+    private List<String> hobbies;
 
     @ApiModelProperty(value = "selfIntroduction", name = "自我介绍", dataType = "String")
     private String selfIntroduction;
@@ -131,13 +133,6 @@ public class ApplyForMemberFrom {
         this.affectiveState = affectiveState;
     }
 
-    public String getHobbies() {
-        return hobbies;
-    }
-
-    public void setHobbies(String hobbies) {
-        this.hobbies = hobbies;
-    }
 
     public String getSelfIntroduction() {
         return selfIntroduction;
@@ -145,5 +140,13 @@ public class ApplyForMemberFrom {
 
     public void setSelfIntroduction(String selfIntroduction) {
         this.selfIntroduction = selfIntroduction;
+    }
+
+    public List<String> getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(List<String> hobbies) {
+        this.hobbies = hobbies;
     }
 }

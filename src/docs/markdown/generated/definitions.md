@@ -46,7 +46,7 @@
 |**birthdate**  <br>*optional*|出生日期|string|
 |**company**  <br>*optional*|公司名|string|
 |**detailedAddress**  <br>*optional*|detailedAddress|string|
-|**hobbies**  <br>*optional*|hobbies|string|
+|**hobbies**  <br>*optional*|hobbies|< string > array|
 |**jobTitle**  <br>*optional*|职位|string|
 |**mailAddress**  <br>*optional*|邮箱|string|
 |**name**  <br>*optional*|姓名|string|
