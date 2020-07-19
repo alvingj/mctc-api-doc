@@ -17,7 +17,7 @@ GET /content/plate_content
 
 |Type|Name|Description|Schema|
 |---|---|---|---|
-|**Query**|**id**  <br>*required*|板块id|string|
+|**Query**|**contentId**  <br>*required*|板块内容id|string|
 |**Query**|**pageNum**  <br>*optional*|页码,需要分页的内容才传此参数|integer (int32)|
 |**Query**|**pageSize**  <br>*optional*|每页条数,需要分页的内容才传此参数|integer (int32)|
 
