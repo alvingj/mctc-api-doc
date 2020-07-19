@@ -1,4 +1,4 @@
-package com.mctc.mctcapidoc.model;
+package com.mctc.mctcapidoc.pojo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

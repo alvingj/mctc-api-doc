@@ -1,10 +1,7 @@
-package com.mctc.mctcapidoc.model;
+package com.mctc.mctcapidoc;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 功能描述:统一响应对象
@@ -14,6 +11,7 @@ import java.util.Map;
  * @author: gongjun
  * @date: 2018/12/14 13:50
  */
+@ApiModel(value = "ResponseBean", description = "统一响应对象")
 public class ResponseBean<T> {
     @ApiModelProperty(value = "状态 0:成功;401:参数不对;402:参数值不对;502:系统内部错误,506:无操作权限", name = "status", dataType = "Long")
     private int status;

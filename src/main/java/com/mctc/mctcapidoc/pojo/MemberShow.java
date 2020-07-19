@@ -1,4 +1,4 @@
-package com.mctc.mctcapidoc.model;
+package com.mctc.mctcapidoc.pojo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -21,8 +21,8 @@ public class MemberShow {
     @ApiModelProperty(value = "名字", name = "name", dataType = "String")
     public String name;
 
-    @ApiModelProperty(value = "职位", name = "jobTitle", dataType = "String")
-    public String jobTitle;
+    @ApiModelProperty(value = "职位", name = "desc", dataType = "String")
+    public String desc;
 
     public String getImgUrl() {
         return imgUrl;
@@ -40,11 +40,11 @@ public class MemberShow {
         this.name = name;
     }
 
-    public String getJobTitle() {
-        return jobTitle;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

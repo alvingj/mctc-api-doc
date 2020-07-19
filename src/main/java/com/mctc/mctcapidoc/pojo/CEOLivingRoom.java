@@ -1,4 +1,4 @@
-package com.mctc.mctcapidoc.model;
+package com.mctc.mctcapidoc.pojo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -12,35 +12,35 @@ import io.swagger.annotations.ApiModelProperty;
  * @UpdateRemark: 修改内容
  * @Version: 1.0
  */
-@ApiModel(value = "CEOLivingRoom", description = "CEO会客厅,三个图片；（首页大图，小图，列表图）有播放")
+@ApiModel(value = "CEOLivingRoom", description = "CEO会客厅,三个图片；（首页大图，小图，列表图）视频访谈")
 public class CEOLivingRoom {
 
     @ApiModelProperty(value = "id", name = "id", dataType = "Long")
     private Long id;
 
-    @ApiModelProperty(value = "列表图片地址", name = "listImgUrl", dataType = "String")
-    public String listImgUrl;
+    @ApiModelProperty(value = "列表图片地址", name = "rankImgUrl", dataType = "String")
+    private String rankImgUrl;
 
-    @ApiModelProperty(value = "首页小图片地址", name = "hpSmallImgUrl", dataType = "String")
-    public String hpSmallImgUrl;
+    @ApiModelProperty(value = "首页小图片地址", name = "smallImgUrl", dataType = "String")
+    private String smallImgUrl;
 
-    @ApiModelProperty(value = "首页图片地址", name = "hpImgUrl", dataType = "String")
-    public String hpImgUrl;
+    @ApiModelProperty(value = "首页大图片地址", name = "bigImgUrl", dataType = "String")
+    private String bigImgUrl;
 
     @ApiModelProperty(value = "视频地址,列表页有视频优先展示视频", name = "videoUrl", dataType = "String")
-    public String videoUrl;
+    private String videoUrl;
 
     @ApiModelProperty(value = "阅读量", name = "viewCount", dataType = "Long")
     private Long viewCount;
 
-    @ApiModelProperty(value = "发布时间", name = "createTime", dataType = "String")
-    private String createTime;
+    @ApiModelProperty(value = "发布时间", name = "publishTime", dataType = "String")
+    private String publishTime;
 
     @ApiModelProperty(value = "标题", name = "title", dataType = "String")
     private String title;
 
-    @ApiModelProperty(value = "描述,用于列表展示", name = "description", dataType = "String")
-    private String description;
+    @ApiModelProperty(value = "描述,用于列表展示", name = "desc", dataType = "String")
+    private String desc;
 
     @ApiModelProperty(value = "内容,html格式 富文本发布", name = "title", dataType = "String")
     private String content;
@@ -53,28 +53,28 @@ public class CEOLivingRoom {
         this.id = id;
     }
 
-    public String getListImgUrl() {
-        return listImgUrl;
+    public String getRankImgUrl() {
+        return rankImgUrl;
     }
 
-    public void setListImgUrl(String listImgUrl) {
-        this.listImgUrl = listImgUrl;
+    public void setRankImgUrl(String rankImgUrl) {
+        this.rankImgUrl = rankImgUrl;
     }
 
-    public String getHpSmallImgUrl() {
-        return hpSmallImgUrl;
+    public String getSmallImgUrl() {
+        return smallImgUrl;
     }
 
-    public void setHpSmallImgUrl(String hpSmallImgUrl) {
-        this.hpSmallImgUrl = hpSmallImgUrl;
+    public void setSmallImgUrl(String smallImgUrl) {
+        this.smallImgUrl = smallImgUrl;
     }
 
-    public String getHpImgUrl() {
-        return hpImgUrl;
+    public String getBigImgUrl() {
+        return bigImgUrl;
     }
 
-    public void setHpImgUrl(String hpImgUrl) {
-        this.hpImgUrl = hpImgUrl;
+    public void setBigImgUrl(String bigImgUrl) {
+        this.bigImgUrl = bigImgUrl;
     }
 
     public String getVideoUrl() {
@@ -93,12 +93,12 @@ public class CEOLivingRoom {
         this.viewCount = viewCount;
     }
 
-    public String getCreateTime() {
-        return createTime;
+    public String getPublishTime() {
+        return publishTime;
     }
 
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime;
+    public void setPublishTime(String publishTime) {
+        this.publishTime = publishTime;
     }
 
     public String getTitle() {
@@ -109,12 +109,12 @@ public class CEOLivingRoom {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     public String getContent() {
