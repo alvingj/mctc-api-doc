@@ -28,11 +28,11 @@ public class MctcPageController {
     @GetMapping("plate_content")
     @ApiOperation(value = "板块内容", notes = "根据板块id获取内容", produces = "application/json")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "id", value = "板块id", required = true, dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "contentId", value = "板块内容id", required = true, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "pageNum", value = "页码,需要分页的内容才传此参数", required = false, dataType = "Int", paramType = "query"),
             @ApiImplicitParam(name = "pageSize", value = "每页条数,需要分页的内容才传此参数", required = false, dataType = "Int", paramType = "query")
     })
-    public ResponseBean<PlateContent> getPlateContentById(@RequestParam(value = "id", required = true) String code,
+    public ResponseBean<PlateContent> getPlateContentById(@RequestParam(value = "contentId", required = true) String contentId,
                                                           @RequestParam(value = "pageNum") Integer pageNum,
                                                           @RequestParam(value = "pageSize") Integer pageSize) {
         return null;
