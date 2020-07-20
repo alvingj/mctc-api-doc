@@ -76,4 +76,4 @@
 
 [响应定义](definitions.md)
 
-也可直接查询项目根目录下的paths.html definitions.html
+也可直接在\src\docs\asciidoc\html下查看

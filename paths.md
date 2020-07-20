@@ -20,6 +20,7 @@ GET /content/plate_content
 |**Query**|**contentId**  <br>*required*|板块内容id|string|
 |**Query**|**pageNum**  <br>*optional*|页码,需要分页的内容才传此参数|integer (int32)|
 |**Query**|**pageSize**  <br>*optional*|每页条数,需要分页的内容才传此参数|integer (int32)|
+|**Query**|**searchKey**  <br>*optional*|搜索词,在新闻列表内容时传值达到筛选的功能|string|
 
 
 #### Responses
